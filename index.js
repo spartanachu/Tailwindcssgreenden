@@ -28,7 +28,7 @@ search.addEventListener("keyup",function(){
         {
             var productname=productlist[count].querySelector("h1").textContent
             console.log(productname)
-            if(productname[count].toUpperCase().indexOf(searchlist)<0)
+            if(productname.toUpperCase().indexOf(searchlist)==-1)
                 {
                     productlist[count].style.display="none"
                 }
